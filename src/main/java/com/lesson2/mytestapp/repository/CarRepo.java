@@ -1,10 +1,10 @@
 package com.lesson2.mytestapp.repository;
 
-import com.lesson2.mytestapp.model.BookEntity;
+import com.lesson2.mytestapp.model.Car;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BookRepository  extends JpaRepository<BookEntity,Integer> {
-    BookEntity findById(Long id);
+public interface CarRepo extends JpaRepository<Car,Long> {
+    Car findCarById(Long id);
 }
